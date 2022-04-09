@@ -7,7 +7,7 @@ class StreamCreate extends React.Component {
    renderInput = ({ input, label, meta }) => {
 
        const errorStyling = `field ${ meta.error && meta.touched ? 'error' : '' }`
-       
+
         return (
             <div className={errorStyling}>
                 <label>{label}</label>
@@ -28,6 +28,7 @@ class StreamCreate extends React.Component {
       }
    }
    
+
    
    onSubmit(formValues) {
         console.log(formValues)
