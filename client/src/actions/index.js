@@ -1,5 +1,6 @@
 import streams from '../apis/streams.js'
 import { SIGN_IN, SIGN_OUT, CREATE_STREAM, FETCH_STREAM, FETCH_STREAMS, DELETE_STREAM, EDIT_STREAM } from './types.js'
+import history from '../history.js'
 
 
 export const signIn = (userId) => {
@@ -24,7 +25,7 @@ export const createStream = (formValues) => {
 
      dispatch({ type: CREATE_STREAM, payload: response.data })
 
-     
+     history.push('/')
     }
 }
 
