@@ -17,6 +17,7 @@ class StreamDelete extends React.Component {
         const { id } = this.props.match.params
         return (
             <>
+              
                 <button onClick={() => this.props.deleteStream(id)} className="ui button negative">Delete</button>
                 <Link to="/" className="ui button">Cancel</Link>
             </>
